@@ -83,6 +83,6 @@ averagePair([], 4)
 // false
 ```
 
-## Contributors
+## Contributors List
 
 By using the [GitHub REST API](https://docs.github.com/en/rest) or the [GitHub GraphQL API](https://docs.github.com/en/graphql), build an application that allows a user to list the contributors of a given repository. No other requirement: show us your skills!
