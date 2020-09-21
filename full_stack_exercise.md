@@ -2,7 +2,7 @@
 
 > Max. duration: 48 hours
 
-## Highest Occurrence
+## Exercice 1: Highest Occurrence
 
 Write a function called `highestOccurrence`. Given an array of `string` and/or `number`, this function should return the array item with the highest frequency. The time complexity of the solution should be inferior or equal to O(n).
 
@@ -28,7 +28,7 @@ highestOccurrence(['a', 'a', 2, 2, 2, 'a', 4]);
 // ['a', 2]
 ```
 
-## Maximum Sub Array Sum
+## Exercice 2: Maximum Sub Array Sum
 
 Write a function called `maxSubarraySum` which accepts an array of integers and a number called n. The function should calculate the maximum sum of n consecutive elements in the array. The time complexity of the solution should be inferior or equal to O(n).
 
@@ -57,7 +57,7 @@ maxSubarraySum([], 4)
 // null
 ```
 
-## Average Pair
+## Exercice 3: Average Pair
 
 Write a function called `averagePair`. Given a sorted array of integers and a target average, determine if there is a pair of values in the array where the average of the pair equals the target average. There may be more than one pair that matches the average target. The time complexity of the solution should be inferior or equal to O(n).
 
@@ -83,6 +83,6 @@ averagePair([], 4)
 // false
 ```
 
-## Contributors List
+## Exercice 4: Contributors List
 
 By using the [GitHub REST API](https://docs.github.com/en/rest) or the [GitHub GraphQL API](https://docs.github.com/en/graphql), build an application that allows a user to list the contributors of a given repository. No other requirement: show us your skills!
