@@ -40,7 +40,6 @@ function maxSubarraySum (array, num) {
 }
 
 function averagePair(array, num) {
-
   if (array.length <= 1) return false;
 
   let start = 0 ;
@@ -57,8 +56,6 @@ function averagePair(array, num) {
     }
   } return false;
 }
-
-console.log(averagePair([1,3,3,5,6,7,10,12,19], 8));
 
 
 module.exports = {highestOccurrence, maxSubarraySum, averagePair};
