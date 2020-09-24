@@ -2,3 +2,18 @@
     padding: 20px;
     background-color: azure;
 }
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.list {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
