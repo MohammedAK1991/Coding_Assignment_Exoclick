@@ -42,9 +42,18 @@ function maxSubarraySum (array, num) {
 function averagePair(array, num) {
   let start = 0 ;
   let end = array.length - 1;
-  let middleElement = array[Math.floor(end-1/2)];
   // return end;
-  return middleElement;
+  while (start < end) {
+    if ((array[start] + array[end])/ 2 == num ) {
+      return true;
+    }
+    if ((array[start] + array[end])/ 2 >  num ) {
+      end--;
+    }
+    if ((array[start] + array[end])/ 2 < num ) {
+      start++;
+    }
+  }
 }
 
 console.log(averagePair([1,3,3,5,6,7,10,12,19], 8));
