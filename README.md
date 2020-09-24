@@ -4,6 +4,7 @@
 
 #### Exercises 1 to 3 are in the exercise.js file
 #### I have also added tests to each exercise in test.js file
+#### Please check exercise_4 folder for exercise-4 with Github API
 
 ## Getting Started
 

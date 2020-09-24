@@ -47,7 +47,7 @@ export default function App() {
               value={state.repository}
               onChange={handleChange}
             />
-            <Form.Button content='Submit' />
+            <Form.Button primary content='Submit' />
           </Form.Group>
         </Form>
       </div>

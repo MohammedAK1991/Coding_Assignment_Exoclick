@@ -1,12 +1,13 @@
 .navbar {
     padding: 20px;
-    background-color: azure;
+    background-color: tomato;
 }
 
 .search {
     display: flex;
     justify-content: center;
     padding: 20px 0;
+    background-color: aquamarine;
 }
 
 .list {
