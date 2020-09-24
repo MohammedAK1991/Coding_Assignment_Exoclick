@@ -13,7 +13,7 @@ git clone https://github.com/MohammedAK1991/Coding_Assignment_Exoclick
 2. Install dependencies
 
 ```
-cd src
+cd exercise_4
 npm install
 ```
 3. Start the application on localhost
