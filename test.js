@@ -3,7 +3,7 @@ var chai = require('chai');
 var expect = chai.expect;
 var assert = chai.assert;
 
-const {highestOccurrence, maxSubarraySum} = require('./exercise');
+const {highestOccurrence, maxSubarraySum, averagePair} = require('./exercise');
 
 describe('highestOccurrence', () => {
   it('should return the correct value', () => {
@@ -19,6 +19,22 @@ describe('highestOccurrence', () => {
     expect(highestOccurrence(['a', 'a', 2, 2, 2, 'a', 4])).to.eql([2, 'a']);
   })
 });
+
+describe('maxSubArraySum', () => {
+  it('should return true if it exists', () => {
+    expect(averagePair([1,2,3], 2.5)).to.eql(true);
+  })
+  it('should return true if it exists', () => {
+    expect(averagePair([1,3,3,5,6,7,10,12,19], 8)).to.eql(true);
+  })
+  it('should return false if it does not', () => {
+    expect(averagePair([-1,0,3,4,5,6], 4.1)).to.eql(false);
+  })
+  it('should return false for insufficient inputs', () => {
+    expect(averagePair([], 4)).to.eql(false);
+  })
+});
+
 
 describe('maxSubArraySum', () => {
   it('should return the correct value', () => {
