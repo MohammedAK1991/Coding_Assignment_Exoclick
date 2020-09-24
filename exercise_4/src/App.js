@@ -3,11 +3,11 @@ import { Form } from 'semantic-ui-react';
 import './App.css';
 import ContributorCard from './ContributorCard'
 
-function App() {
+export default function App() {
 
   const initialState = {
-    username: null,
-    repository: null
+    username: '',
+    repository: ''
   }
 
   const [state, setState] = React.useState(initialState);
@@ -21,14 +21,11 @@ function App() {
     }));
   };
 
-  function handleSubmit() {
+  const  handleSubmit = () => {
     fetch(`https://api.github.com/repos/${state.username}/${state.repository}/contributors`)
       .then(res => res.json())
       .then(data => setContributors(data));
-
   }
-
-
 
   return (
     <div>
@@ -59,8 +56,8 @@ function App() {
             contributors.map(person => <ContributorCard person={person} />)
           }
         </div>
+
     </div>
   );
 }
 
-export default App;
