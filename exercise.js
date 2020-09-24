@@ -21,5 +21,33 @@ function highestOccurrence(array) {
   return maxArray;
 }
 
+function maxSubarraySum (array, num) {
+  if (array.length === 0) return null;
 
-module.exports = highestOccurrence;
+  let start = 0;
+  let sum = 0;
+  let maxSum = 0;
+
+  for (let end = 0; end < array.length; end++) {
+    sum += array[end];
+    if (end >= num -1) {
+      maxSum = Math.max(sum, maxSum);
+      sum -= array[start];
+      start++;
+    }
+  }
+  return maxSum;
+}
+
+function averagePair(array, num) {
+  let start = 0 ;
+  let end = array.length - 1;
+  let middleElement = array[Math.floor(end-1/2)];
+  // return end;
+  return middleElement;
+}
+
+console.log(averagePair([1,3,3,5,6,7,10,12,19], 8));
+
+
+module.exports = {highestOccurrence, maxSubarraySum, averagePair};
