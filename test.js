@@ -1,7 +1,6 @@
 
 var chai = require('chai');
 var expect = chai.expect;
-var assert = chai.assert;
 
 const {highestOccurrence, maxSubarraySum, averagePair} = require('./exercise');
 
@@ -21,6 +20,21 @@ describe('highestOccurrence', () => {
 });
 
 describe('maxSubArraySum', () => {
+  it('should return the correct value', () => {
+    expect(maxSubarraySum([1,2,5,2,8,1,5], 4)).to.eql(17);
+  })
+  it('should return the correct value', () => {
+    expect(maxSubarraySum([1,2,5,2,8,1,5], 2)).to.eql(10);
+  })
+  it('should return the highest element in an array if the value of num is 1', () => {
+    expect(maxSubarraySum([4,2,1,6], 1)).to.eql(6);
+  })
+  it('should return null if the array is empty', () => {
+    expect(maxSubarraySum([],4)).to.eql(null);
+  })
+});
+
+describe('averagePair', () => {
   it('should return true if it exists', () => {
     expect(averagePair([1,2,3], 2.5)).to.eql(true);
   })
@@ -35,19 +49,4 @@ describe('maxSubArraySum', () => {
   })
 });
 
-
-describe('maxSubArraySum', () => {
-  it('should return the correct value', () => {
-    expect(maxSubarraySum([1,2,5,2,8,1,5], 4)).to.eql(17);
-  })
-  it('should return the correct value', () => {
-    expect(maxSubarraySum([1,2,5,2,8,1,5], 2)).to.eql(10);
-  })
-  it('should return the highest element in an array if the value of num is 1', () => {
-    expect(maxSubarraySum([4,2,1,6], 1)).to.eql(6);
-  })
-  it('should return null if the array is empty', () => {
-    expect(maxSubarraySum([],4)).to.eql(null);
-  })
-});
 
